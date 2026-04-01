@@ -2,7 +2,7 @@
 
 > A full-stack MERN application for uploading, organizing, and managing personal medical records in one secure, cloud-backed vault.
 >
-> **Live Demo** - curedocs.vercel.app
+> **Live Demo** - curedocs.vercel.app : https://curedocs-4b2w4g7mk-anops706-6213s-projects.vercel.app?_vercel_share=AGFPWb7XvS45hg3u1dDN1xk7ksKDXSzW
 
 
 ---
