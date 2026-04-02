@@ -14,7 +14,8 @@ import Spinner        from '../components/common/Spinner.jsx';
 import { formatDate, formatBytes, getFileIcon, getCatConfig } from '../utils/helpers.js';
 
 // All file access goes through our authenticated proxy — never direct Cloudinary
-const proxyUrl = (id, dl = false) => `/api/files/${id}/stream${dl ? '?dl=1' : ''}`;
+const API_BASE = import.meta.env.VITE_API_BASE_URL ? `${import.meta.env.VITE_API_BASE_URL}/api` : '/api';
+const proxyUrl = (id, dl = false) => `${API_BASE}/files/${id}/stream${dl ? '?dl=1' : ''}`;
 
 // Fetch a file blob with the JWT token attached
 const fetchWithAuth = (url, token) =>
